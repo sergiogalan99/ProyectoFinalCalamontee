@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Inicio
+      </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+
+
+
+  <!-- <ion-slides style="height: 15em;" pager="true" autoplay="2000" loop="true" speed="3000" [options]="slideOpts">
+
+      <ion-slide *ngFor="let image of ImageArray">
+          <img src="{{image.image}}" height="200" width="500">
+      </ion-slide>
+
+
+
+
+  </ion-slides>
+
+    <ion-button routerLink='/login'>Iniciar Sesion</ion-button>
+  <ion-button routerLink='/register'>Registrarse</ion-button> -->
+
+  <ion-item>
+    <ion-label  position="floating">Contraseña</ion-label>
+    <ion-input  #passwordEyeRegister  [type]="passwordTypeInput"  formControlName="password"></ion-input>
+    <button  item-end  class="btn_eye_icon"  (click)="togglePasswordMode()">
+        <ion-icon  [name]="iconpassword"></ion-icon>
+    </button>
+</ion-item>
+
+</ion-content>

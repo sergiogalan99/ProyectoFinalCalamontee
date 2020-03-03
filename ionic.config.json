@@ -1,5 +1,7 @@
 {
   "name": "blanck",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
