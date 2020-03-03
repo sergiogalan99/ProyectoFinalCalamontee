@@ -1,22 +1,49 @@
-<ion-header no-border>
+<ion-header>
   <div class="login-header ion-padding">
-    <div linespace></div>
-   
- </div>
+    <div heading-colum-lr>
+  <ion-toolbar color="red">   
+    <h1 big-heading>Menu</h1>
+    <!-- <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons> -->
 
+  </ion-toolbar>
+  </div>
+</div>
 </ion-header>
 
 <ion-content>
-   <div linespace></div>
+  <div linespace></div>
+    <ion-grid class="styleGridCarMenu">
+      <ion-row>
+        <ion-col col-6 style="padding: 0;">
+          <ion-card text-center padding color="danger" routerLink='/nueva-incidencia'>
+            <ion-icon class="iconstyleCard" name="build-outline"></ion-icon>
+            <h2>Nueva incidencia</h2>
   
- 
-  <div heading-colum-lr>
-    <h1 big-heading>Menu</h1>
-    <ion-badge (click)="logout()" shape="round" fill="solid" size="large" color="tertiary">LogOut</ion-badge>
-   </div>
- 
-<ion-label class="labelStyle" style="color:red;">{{ res }}</ion-label>
-
-
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card text-center padding style="background-color: #6666ff; color: white;" routerLink='/puesto-trabajo'>
+            <ion-icon class="iconstyleCard" name="people"></ion-icon>
+            <h2>Puestos de trabajo</h2>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <ion-card text-center padding style="background-color: #009933; color: white;" routerLink='/eventos'>
+            <ion-icon class="iconstyleCard" name="calendar-outline"></ion-icon>
+            <h2>Eventos</h2>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card text-center padding style="background-color: #cccc00; color: white;" routerLink='/noticias'>
+            <ion-icon class="iconstyleCard" name="list"></ion-icon>
+            <h2>Noticias</h2>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  
+    </ion-grid>
 </ion-content>
-
